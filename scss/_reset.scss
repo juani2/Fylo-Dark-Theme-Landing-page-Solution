@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Converts the unitless value of `font-size-base` into a pixel  */
+    font-size: $font-size-base * 1px;
+    line-height: $line-height-base * 1px;
+    font-family: $font-family-body;
+    color: $color-neutral-white;
+    background-color: $color-primary-300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: $font-family-heading;
+}
+
+h1 {
+    font-size     : responsive-length($breakpoint-mobile, 24, $breakpoint-desktop, 40);
+    line-height   : responsive-length($breakpoint-mobile, 36, $breakpoint-desktop, 60);
+    margin-bottom : responsive-length($breakpoint-mobile, 15, $breakpoint-desktop, 32);
+}
+
+h3 {
+    font-size     : responsive-length($breakpoint-mobile, 18, $breakpoint-desktop, 20);
+    line-height   : responsive-length($breakpoint-mobile, 24, $breakpoint-desktop, 23.48);
+    margin-bottom : rem(8);
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}

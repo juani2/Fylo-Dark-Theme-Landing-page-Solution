@@ -1,0 +1,14 @@
+.visually-hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lead {
+    // This lead text is only noticeably at larger viewport widths
+    font-size     : responsive-length($breakpoint-mobile, 14, $breakpoint-desktop, 20);
+    line-height   : responsive-length($breakpoint-mobile, 21, $breakpoint-desktop, 30);
+    margin-bottom : rem(32);
+}

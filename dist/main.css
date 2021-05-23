@@ -1,0 +1,126 @@
+/* Branding Colors */
+/* footer background */
+/* main background  */
+/* Dark Blue (intro and email sign up background */
+/* testimonials background */
+/* Accent Colors */
+/* inside call-to-action gradient */
+/* inside call-to-action gradient */
+/* error */
+/* Neutral Colors */
+/* Typography Settings */
+/* Base font-size in pixels */
+/* Base vertical spacing in pixels */
+/* Design Breakpoints */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  /* Converts the unitless value of `font-size-base` into a pixel  */
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #181f2a; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif; }
+
+h1 {
+  font-size: clamp(1.7142857143rem, calc(2.8571428571rem - (0.0150234742*(102.8571428571rem - 100vw)) ), 2.8571428571rem);
+  line-height: clamp(2.5714285714rem, calc(4.2857142857rem - (0.0225352113*(102.8571428571rem - 100vw)) ), 4.2857142857rem);
+  margin-bottom: clamp(1.0714285714rem, calc(2.2857142857rem - (0.0159624413*(102.8571428571rem - 100vw)) ), 2.2857142857rem); }
+
+h3 {
+  font-size: clamp(1.2857142857rem, calc(1.4285714286rem - (0.0018779343*(102.8571428571rem - 100vw)) ), 1.4285714286rem);
+  line-height: clamp(1.6771428571rem, calc(1.6771428571rem - (-0.0004882629*(102.8571428571rem - 100vw)) ), 1.7142857143rem);
+  margin-bottom: 0.5714285714rem; }
+
+a {
+  color: inherit; }
+
+img {
+  width: 100%; }
+
+.visually-hidden {
+  display: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-lead {
+  font-size: clamp(1rem, calc(1.4285714286rem - (0.0056338028*(102.8571428571rem - 100vw)) ), 1.4285714286rem);
+  line-height: clamp(1.5rem, calc(2.1428571429rem - (0.0084507042*(102.8571428571rem - 100vw)) ), 2.1428571429rem);
+  margin-bottom: 2.2857142857rem; }
+
+.button {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, calc(1.1428571429rem - (0.0018779343*(102.8571428571rem - 100vw)) ), 1.1428571429rem);
+  text-decoration: none;
+  color: #0b1523;
+  background-color: white;
+  padding-top: clamp(1.1428571429rem, calc(1.3571428571rem - (0.0028169014*(102.8571428571rem - 100vw)) ), 1.3571428571rem);
+  padding-right: clamp(5.7857142857rem, calc(6.7857142857rem - (0.0131455399*(102.8571428571rem - 100vw)) ), 6.7857142857rem);
+  padding-bottom: clamp(1.1428571429rem, calc(1.2857142857rem - (0.0018779343*(102.8571428571rem - 100vw)) ), 1.2857142857rem);
+  padding-left: clamp(5.7857142857rem, calc(6.8571428571rem - (0.014084507*(102.8571428571rem - 100vw)) ), 6.8571428571rem);
+  border-radius: clamp(1.7142857143rem, calc(2rem - (0.0037558685*(102.8571428571rem - 100vw)) ), 2rem); }
+
+.button--primary {
+  background: linear-gradient(134.79deg, #65e2d9 -42.11%, #339ecc 100%);
+  color: white; }
+
+.button--primary:hover {
+  background: #65e2d9; }
+
+.show-borders {
+  border: 1px dashed #65e2d9; }
+
+.page-nav {
+  width: Min(90%, clamp(23.6428571429rem, calc(91.4285714286rem - (0.8910798122*(102.8571428571rem - 100vw)) ), 91.4285714286rem));
+  margin-top: clamp(1.7142857143rem, calc(5.2142857143rem - (0.0460093897*(102.8571428571rem - 100vw)) ), 5.2142857143rem);
+  margin-right: auto;
+  margin-bottom: clamp(3.4285714286rem, calc(5.3571428571rem - (0.0253521127*(102.8571428571rem - 100vw)) ), 5.3571428571rem);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.page-nav__logo {
+  width: clamp(5.7142857143rem, calc(12.5714285714rem - (0.0901408451*(102.8571428571rem - 100vw)) ), 12.5714285714rem);
+  height: clamp(1.7142857143rem, calc(3.7142857143rem - (0.0262910798*(102.8571428571rem - 100vw)) ), 3.7142857143rem); }
+
+.page-nav__link {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(0.8571428571rem, calc(1.1428571429rem - (0.0037558685*(102.8571428571rem - 100vw)) ), 1.1428571429rem);
+  font-weight: 400;
+  text-decoration: none; }
+
+.page-nav__link:hover {
+  font-weight: 700;
+  text-decoration: underline; }
+
+.page-nav__link + .page-nav__link {
+  margin-left: clamp(1.7857142857rem, calc(4.0714285714rem - (0.0300469484*(102.8571428571rem - 100vw)) ), 4.0714285714rem); }
+
+#page-header > *, #page-header > * > * {
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-header__visual {
+  display: block;
+  width: Min(90%, clamp(21.7142857143rem, calc(51.4285714286rem - (0.3906103286*(102.8571428571rem - 100vw)) ), 51.4285714286rem));
+  height: auto;
+  margin: 0 auto; }
+
+.page-header__copy h1 {
+  max-width: 28ch; }
+
+.page-header__copy p {
+  max-width: 52ch; }
+
+/*# sourceMappingURL=main.css.map */

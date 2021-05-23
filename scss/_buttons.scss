@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    font-family: $font-family-heading;
+    font-weight: 700;
+    font-size: responsive-length($breakpoint-mobile, 14, $breakpoint-desktop, 16);
+    text-decoration: none;
+
+    color: $color-primary-400;
+    background-color: $color-neutral-white;
+
+    padding-top: responsive-length($breakpoint-mobile, 16, $breakpoint-desktop, 19);
+    padding-right: responsive-length($breakpoint-mobile, 81, $breakpoint-desktop, 95);
+    padding-bottom: responsive-length($breakpoint-mobile, 16, $breakpoint-desktop, 18);
+    padding-left: responsive-length($breakpoint-mobile, 81, $breakpoint-desktop, 96);
+
+    border-radius: responsive-length($breakpoint-mobile, 24, $breakpoint-desktop, 28);
+}
+
+.button--primary {
+    background: linear-gradient(134.79deg, $color-accent-cyan -42.11%, $color-accent-blue 100%);
+    color: $color-neutral-white;
+}
+
+.button--primary:hover {
+    background: $color-accent-cyan;
+}

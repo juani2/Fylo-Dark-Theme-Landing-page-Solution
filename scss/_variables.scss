@@ -1,0 +1,22 @@
+/* Branding Colors */
+$color-primary-400      :hsl(216, 53%,  9%); /* footer background */
+$color-primary-300      :hsl(218, 28%, 13%); /* main background  */
+$color-primary-200      :hsl(217, 28%, 15%); /* Dark Blue (intro and email sign up background */
+$color-primary-100      :hsl(219, 30%, 18%); /* testimonials background */
+/* Accent Colors */
+$color-accent-cyan      : hsl(176,  68%, 64%); /* inside call-to-action gradient */
+$color-accent-blue      : hsl(198,  60%, 50%); /* inside call-to-action gradient */
+$color-accent-light-red :hsl(  0, 100%, 63%); /* error */
+/* Neutral Colors */
+$color-neutral-white    :hsl(0, 0%, 100%);
+
+/* Typography Settings */
+$font-size-base         : 14; /* Base font-size in pixels */
+$line-height-base       : 21; /* Base vertical spacing in pixels */
+$font-family-heading    : "Raleway", sans-serif;
+$font-family-body       : "Open Sans", sans-serif;
+
+/* Design Breakpoints */
+$breakpoint-mobile      : 375;
+$breakpoint-tablet      : 768;
+$breakpoint-desktop     : 1440;

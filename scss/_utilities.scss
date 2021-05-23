@@ -1,0 +1,31 @@
+/// Converts a number representing a pixel value into its rem equivalent.
+/// @param {number} $pixel_val - A unitless value representing the pixel value to be converted in rem.
+/// @return {number} - The equivalent rem value of $pixel_val.
+@function rem($pixel_value){
+    // 1rem is multiplied to the unitless ration to convert it from a unitless into a rem value.
+    @return (($pixel_value/$font-size-base) * 1rem);
+}
+
+
+/// Returns a CSS `clamp()` statement that defines the responsive sizing behaviour of a lenght-base unit.
+/// Typically useful for fluid sizing of font-size, line-height, letter-spacing, margin, padding, width, and/or heights.
+/// @param {number} $breakpoint-1 - target minimum breakpoint
+/// @param {number} $length-1 - length-value at minimum breakpoint
+/// @param {number} $breakpoint-2 - target maximum breakpoint
+/// @param {number} $length-2 - length-value at maximum breakpoint
+@function responsive-length($breakpoint-1, $length-1,$breakpoint-2, $length-2){
+    // start calculating using unitless numbers
+    $delta-y: $length-2 - $length-1;
+    $delta-x: $breakpoint-2 - $breakpoint-1;
+    $slope: $delta-y/$delta-x;
+
+    $clamp-min: min($length-1, $length-2);
+    $clamp-max: max($length-1, $length-2);
+
+    // y = y_2 - m(x_2 - x)
+    // After applying the equation, place rem units.
+    $clamp-target-val: calc(#{rem($length-2)} - (#{$slope}*(#{rem($breakpoint-2)} - 100vw)) );
+
+    //Assemble the clamp function
+    @return clamp(#{rem($clamp-min)}, #{$clamp-target-val}, #{rem($clamp-max)});
+}

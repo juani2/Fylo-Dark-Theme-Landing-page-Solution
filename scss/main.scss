@@ -1,0 +1,80 @@
+@import "variables";
+@import "utilities";
+@import "reset";
+@import "typography.scss";
+@import "buttons";
+
+
+.show-borders {
+    border: 1px dashed $color-accent-cyan;
+}
+
+// Page Main Naviagation
+//====================================================================================================\\
+.page-nav {
+    // If viewport width is less than `breakpoint-mobile`, let the width become 90% of viewport width
+    width: Min(90%, responsive-length($breakpoint-mobile, 331, $breakpoint-desktop, 1280));
+    
+    margin-top      : responsive-length($breakpoint-mobile, 24, $breakpoint-desktop, 73);
+    margin-right    : auto;
+    margin-bottom   : responsive-length($breakpoint-mobile, 48, $breakpoint-desktop, 75);
+    margin-left     : auto;
+
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.page-nav__logo {
+    width  : responsive-length($breakpoint-mobile, 80, $breakpoint-desktop, 176);
+    height : responsive-length($breakpoint-mobile, 24, $breakpoint-desktop,  52);
+}
+
+.page-nav__link {
+    font-family: $font-family-heading;
+    font-size: responsive-length($breakpoint-mobile, 12, $breakpoint-desktop, 16);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.page-nav__link:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.page-nav__link+.page-nav__link {
+    margin-left: responsive-length($breakpoint-mobile, 25, $breakpoint-desktop, 57);
+}
+//====================================================================================================\\
+
+
+
+
+
+// Page Header Section
+//====================================================================================================\\
+// Horizontally centers immediate child of `#page-header` and the immediate children of its immediate child.
+#page-header > *, #page-header > * > *  {
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.page-header__visual {
+    display: block;
+
+    // If viewport width is less than `breakpoint-mobile`, let the width become 90% of viewport width
+    width  : Min(90%, responsive-length($breakpoint-mobile, 304, $breakpoint-desktop, 720));
+    // If viewport width is less than `breakpoint-mobile`, let the height adjust based on the current image width.
+    height : auto;
+    
+    margin: 0 auto;
+}
+
+.page-header__copy h1 {
+    max-width: 28ch;
+}
+
+.page-header__copy p {
+    max-width: 52ch;
+}
+//====================================================================================================\\
