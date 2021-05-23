@@ -115,7 +115,9 @@ img {
   display: block;
   width: Min(90%, clamp(21.7142857143rem, calc(51.4285714286rem - (0.3906103286*(102.8571428571rem - 100vw)) ), 51.4285714286rem));
   height: auto;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: clamp(2.3571428571rem, calc(2.3571428571rem - (-0.0028169014*(102.8571428571rem - 100vw)) ), 2.5714285714rem); }
 
 .page-header__copy h1 {
   max-width: 28ch; }

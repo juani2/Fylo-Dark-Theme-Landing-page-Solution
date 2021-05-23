@@ -67,7 +67,9 @@
     // If viewport width is less than `breakpoint-mobile`, let the height adjust based on the current image width.
     height : auto;
     
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: responsive-length($breakpoint-mobile, 36, $breakpoint-desktop, 33);
 }
 
 .page-header__copy h1 {
