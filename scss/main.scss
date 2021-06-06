@@ -79,4 +79,79 @@
 .page-header__copy p {
     max-width: 52ch;
 }
+
+#page-header {
+    margin-bottom: responsive-length($breakpoint-mobile, 120, $breakpoint-desktop, 158);
+}
+//====================================================================================================\\
+
+
+
+
+
+//Page Main Section
+//====================================================================================================\\
+.page-main {
+    width  : Min(90%, responsive-length($breakpoint-mobile, 320, $breakpoint-desktop, 880));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-row + .feature-row{
+    margin-top: rem(80);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-md-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature-wrapper{
+        margin-top: rem(80);
+    }
+    .feature-row + .feature-row{
+        margin-top: 0
+    }
+}
+
+.flex-justify--space-between {
+    justify-content: space-between;
+}
+
+.page-main__icon-wrapper {
+    width: responsive-length($breakpoint-mobile, 80, $breakpoint-desktop, 104);
+    height: responsive-length($breakpoint-mobile, 80, $breakpoint-desktop, 104);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img[src="/images/icon-access-anywhere.svg"]{
+    width: responsive-length($breakpoint-mobile, 64.47, $breakpoint-desktop, 84);
+    height: responsive-length($breakpoint-mobile, 59.81, $breakpoint-desktop, 78);
+}
+img[src="/images/icon-security.svg"]{
+    width: responsive-length($breakpoint-mobile, 50.77, $breakpoint-desktop, 66);
+    height: responsive-length($breakpoint-mobile, 64.62, $breakpoint-desktop, 84);
+}
+
+.feature-wrapper:nth-of-type(1) {
+    width  : Min(90%, responsive-length($breakpoint-mobile, 320, $breakpoint-desktop, 349));
+}
+.feature-wrapper:nth-of-type(2) {
+    width  : Min(90%, responsive-length($breakpoint-mobile, 320, $breakpoint-desktop, 384));
+}
 //====================================================================================================\\

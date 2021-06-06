@@ -125,4 +125,57 @@ img {
 .page-header__copy p {
   max-width: 52ch; }
 
+#page-header {
+  margin-bottom: clamp(8.5714285714rem, calc(11.2857142857rem - (0.0356807512*(102.8571428571rem - 100vw)) ), 11.2857142857rem); }
+
+.page-main {
+  width: Min(90%, clamp(22.8571428571rem, calc(62.8571428571rem - (0.5258215962*(102.8571428571rem - 100vw)) ), 62.8571428571rem));
+  margin-left: auto;
+  margin-right: auto; }
+
+.feature-row + .feature-row {
+  margin-top: 5.7142857143rem; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+@media screen and (max-width: 768px) {
+  .flex-md-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  .feature-wrapper {
+    margin-top: 5.7142857143rem; }
+
+  .feature-row + .feature-row {
+    margin-top: 0; } }
+.flex-justify--space-between {
+  justify-content: space-between; }
+
+.page-main__icon-wrapper {
+  width: clamp(5.7142857143rem, calc(7.4285714286rem - (0.0225352113*(102.8571428571rem - 100vw)) ), 7.4285714286rem);
+  height: clamp(5.7142857143rem, calc(7.4285714286rem - (0.0225352113*(102.8571428571rem - 100vw)) ), 7.4285714286rem);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+img[src="/images/icon-access-anywhere.svg"] {
+  width: clamp(4.605rem, calc(6rem - (0.0183380282*(102.8571428571rem - 100vw)) ), 6rem);
+  height: clamp(4.2721428571rem, calc(5.5714285714rem - (0.0170798122*(102.8571428571rem - 100vw)) ), 5.5714285714rem); }
+
+img[src="/images/icon-security.svg"] {
+  width: clamp(3.6264285714rem, calc(4.7142857143rem - (0.0143004695*(102.8571428571rem - 100vw)) ), 4.7142857143rem);
+  height: clamp(4.6157142857rem, calc(6rem - (0.0181971831*(102.8571428571rem - 100vw)) ), 6rem); }
+
+.feature-wrapper:nth-of-type(1) {
+  width: Min(90%, clamp(22.8571428571rem, calc(24.9285714286rem - (0.0272300469*(102.8571428571rem - 100vw)) ), 24.9285714286rem)); }
+
+.feature-wrapper:nth-of-type(2) {
+  width: Min(90%, clamp(22.8571428571rem, calc(27.4285714286rem - (0.0600938967*(102.8571428571rem - 100vw)) ), 27.4285714286rem)); }
+
 /*# sourceMappingURL=main.css.map */
